@@ -1,0 +1,16 @@
+
+server:
+   port: 8100
+      
+spring:
+  application:
+    name: ZuulGateway
+    
+zuul:
+   routes:
+     PRODUCT-APP:
+        url: http://localhost:8087
+     PROFILE-APP:
+             url: http://localhost:9095
+    
+    
